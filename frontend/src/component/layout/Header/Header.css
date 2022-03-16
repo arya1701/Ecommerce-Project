@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+    align-items: center;
+    background-color: #0F4C75;
+    color: #FFFF;
+}
+.navbar .logo .logo-h{
+    font-size: 2rem;
+}
+.navbar .classlists{
+    list-style: none;
+    width:25%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+/* .navbar .search{
+    width: 25%;
+    background-color: #FFFF;
+    height: 5vh;
+    border-radius: 20px;
+}
+.navbar .search input{
+    width: 100%;
+    height: 100%;
+    background-color: #FFFF;
+    color: #000;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+.navbar .buttons{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .buttons button{
+    padding: 9px 15px;
+    background-color: #2874F0;
+    color: #fff;
+    border: 1px solid #FFFF;
+    font-size: 1rem;
+} */
+.banner img{
+    width: 100vw;
+    height: 50vh;
+    
+}
+
+.speedDial {
+    position: fixed;
+    right: 3vmax;
+    top: 3vmax;
+  }
+  
+  .speedDialIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 10%;
+    border: 3px solid #1abc9c;
+  }
+  .speedDialIcon:hover{
+      border: 3px  solid #EE3769;
+      cursor: pointer;
+    transition: all 800ms ease;
+  }
+
+.header {
+    background: '#0F4C75';
+    height: 65px;
+  }
+.heading {
+    text-decoration:none;
+    color: #FFF;
+    font-size: 25px;
+    font-weight:700;
+  }
+.login {
+    background: #FFFFFF;
+    color: #000;
+    text-transform: none;
+
+  }
+.wrapper {
+    margin: 0 5% 0 auto;
+    display: flex;
+    align-items: center;
+
+    /* // applied on the child compoonent
+    '& > *': {
+      marginRight: 50,
+      alignItems: 'center',
+    } */
+  }
+.wrapper > *{
+    margin-right: 50px;
+    align-items: center;
+}
+.container {
+    display: flex;
+
+  }
+  .textLink{
+    text-decoration:none;
+    color:none;
+  }
+  .navItems{
+    text-decoration:none;
+    font-size:17px;
+    font-weight:300;
+    margin-left: 12px;
+    color:white;
+    /* '&:hover':{
+      color:'#BBE1FA',
+    } */
+
+  }
+  @media screen and (max-width: 600px) {
+    .heading{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .wrapper{     
+         margin: 0;
+    }
+    .wrapper > * {
+        margin-right: 25px;
+        align-items: center;
+    }
+    .temp{
+        margin-left: 20px;
+    }
+  }
+  @media screen and (max-width: 400px){
+    .heading {
+      font-size: 11px;
+      font-weight: 500;
+  }
+  .navItems {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 0px;
+    color: white;
+}
+.wrapper > * {
+  margin-right: 10px;
+  align-items: center;
+}
+.login {
+  background: #fff;
+  margin-left: 2px;
+  color: #000;
+  /* width: 0px; */
+  height: 30px;
+  /* padding: 8px; */
+  text-transform: none;
+}
+  }
